@@ -10,8 +10,8 @@ const List=()=>{
         {todos.map(todo => {
             return (
                 <div key={todo.id}>
-                    <p>{todo.name} {todo.complete}</p>
-                    <button onClick={()=> dispatchEvent(deleteTodoAction(todo.id))}>
+                    <p>{todo.name} {todo.complete0 && 'Completado'}</p>
+                    <button onClick={()=> dispatch(deleteTodoAction(todo.id))}>
                         Delete
                     </button>
                 </div>
