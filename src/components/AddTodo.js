@@ -22,11 +22,12 @@ const AddTodo=()=>{
     return(
         <div>
             <input 
+            className='form-control mt-2 mb-2'
             type='text' 
             value={todo} 
             onChange={(e) => setTodo(e.target.value)}
             />
-            <button onClick={() => addTodo()}>AGREGAR A LA LISTA</button>
+            <button className='btn btn-primary' onClick={() => addTodo()}>AGREGAR A LA LISTA</button>
         </div>
     )
 };

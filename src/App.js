@@ -9,13 +9,14 @@ import Navbar from './components/Navbar';
 function App() {
   return (
     <Provider store={store}>
-       <div className="App">
+       <div className="nav">
          <Navbar/>
-         <br/>
-        <List/>
-        <br/>
-        <AddTodo/>
-      </div>
+        </div>
+         <div>
+         <List/>
+         </div>
+        <div><AddTodo/>
+        </div>
     </Provider>
    
   );

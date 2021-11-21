@@ -13,7 +13,7 @@ const initialState= {
         complete:false
     },
     {
-        id:3,
+        id:2,
         name:'hacer trekking',
         complete:true,
     },

@@ -11,7 +11,7 @@ const List=()=>{
             return (
                 <div key={todo.id}>
                     <p>{todo.name} {todo.complete && 'Completado'}</p>
-                    <button onClick={()=> dispatch(deleteTodoAction(todo.id))}>
+                    <button className='btn btn-primary' onClick={()=> dispatch(deleteTodoAction(todo.id))}>
                         Delete
                     </button>
                 </div>
