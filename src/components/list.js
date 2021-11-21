@@ -10,7 +10,7 @@ const List=()=>{
         {todos.map(todo => {
             return (
                 <div key={todo.id}>
-                    <p>{todo.name} {todo.complete0 && 'Completado'}</p>
+                    <p>{todo.name} {todo.complete && 'Completado'}</p>
                     <button onClick={()=> dispatch(deleteTodoAction(todo.id))}>
                         Delete
                     </button>
